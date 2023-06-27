@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" async="false"></script>
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <div class="inner-body">
+      <!-- Keeping the input form in a row  -->
+      <div class="set-date">
+        <label class="lab"
+          >Day <input class="day-check" type="number" placeholder="DD" />
+        </label>
+        <label class="lab"
+          >Month <input class="month-check" type="number" placeholder="MM"
+        /></label>
+        <label class="lab"
+          >year <input class="year-check" type="number" placeholder="YYYY"
+        /></label>
+      </div>
+
+      <!--Creating The space for the error i.e error output -->
+      <div class="error-check">
+        <p class="error-output er-one">
+          This field is<br />
+          required
+        </p>
+        <p class="error-output abs er-four">must be in <br />the past</p>
+        <p class="error-output abs er-five">must be a <br />valid year</p>
+        <p class="error-output abs er-six">
+          must be a <br />
+          valid month
+        </p>
+        <p class="error-output abs er-sev">must be a <br />valid date</p>
+        <p class="error-output abs er-eig">must be before today</p>
+        <p class="error-output er-two">
+          This field is<br />
+          required
+        </p>
+        <p class="error-output er-three">
+          This field is<br />
+          required
+        </p>
+      </div>
+
+      <!-- Creating the horizontal middle line -->
+      <hr height="40px" />
+
+      <!-- The Enter Button-->
+      <button aria-label="click-button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 46 44"
+        >
+          <g fill="none" stroke="#FFF" stroke-width="2">
+            <path
+              d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+            />
+          </g>
+        </svg>
+      </button>
+
+      <!--Updating the years,month,days parameter-->
+      <div class="date-generate">
+        <h1 class="year-no"><span class="yrs">- -</span> Years</h1>
+        <h1 class="year-no"><span class="mnth">- -</span> Months</h1>
+        <h1 class="year-no"><span class="dys">- -</span> Days</h1>
+      </div>
+    </div>
+  </body>
+</html>
