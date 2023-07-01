@@ -29,10 +29,6 @@ clicked.addEventListener("click", function () {
   const newDate = new Date();
   const diffInMilliseconds = newDate - dateOfBirth;
 
-  // console.log(+dateOfBirth);
-  // console.log(+newDate);
-  // console.log(+newDate > +dateOfBirth);
-  // Calculate the number of milliseconds in a day, month, and year
   const millisecondsInDay = 24 * 60 * 60 * 1000;
   const millisecondsInMonth = 30 * millisecondsInDay;
   const millisecondsInYear = 365 * millisecondsInDay;
