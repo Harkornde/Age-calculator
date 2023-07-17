@@ -116,14 +116,42 @@ yearInput.addEventListener("keydown", function () {
   yearError.style.display = "none";
 });
 
+yearInput.addEventListener("change", function name() {
+  checkErrorYear.style.visibility = "hidden";
+  yearCheck.style.display = "none";
+  validYear.style.display = "none";
+  yearError.style.display = "none";
+  (addMnth.textContent = "- -"),
+    (addYear.textContent = "- -"),
+    (addDys.textContent = "- -");
+});
+
 monthInput.addEventListener("keydown", function () {
   checkErrorMonth.style.visibility = "hidden";
   validMonth.style.display = "none";
   yearError.style.display = "none";
 });
 
+monthInput.addEventListener("change", function () {
+  checkErrorMonth.style.visibility = "hidden";
+  validMonth.style.display = "none";
+  yearError.style.display = "none";
+  (addMnth.textContent = "- -"),
+    (addYear.textContent = "- -"),
+    (addDys.textContent = "- -");
+});
+
 dayInput.addEventListener("keydown", function () {
   checkErrorDay.style.visibility = "hidden";
   validDate.style.display = "none";
   yearError.style.display = "none";
+});
+
+dayInput.addEventListener("change", function () {
+  checkErrorDay.style.visibility = "hidden";
+  validDate.style.display = "none";
+  yearError.style.display = "none";
+  (addMnth.textContent = "- -"),
+    (addYear.textContent = "- -"),
+    (addDys.textContent = "- -");
 });
